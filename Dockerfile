@@ -17,5 +17,5 @@ COPY --chown=root:root --chmod=644 app.py requirements.txt /home/myapp/
 # Instalar as dependências de Python de acordo com o que foi desenvolvido na aplicação e que está declarado no arquivo requirements.txt.
 RUN pip install --user --trusted-host pypi.python.org -r requirements.txt
 
-# Garante que será iniciado a aplicação.
+# Garante que será iniciado a aplicação..
 CMD ["gunicorn", "app:app"]
